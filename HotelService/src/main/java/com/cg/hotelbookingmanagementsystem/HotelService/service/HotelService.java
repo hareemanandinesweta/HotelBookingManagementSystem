@@ -15,7 +15,7 @@ import com.cg.hotelbookingmanagementsystem.HotelService.exception.HotelNameNotFo
 import com.cg.hotelbookingmanagementsystem.HotelService.exception.HotelNotFoundException;
 
 @Service
-public class HotelService {
+public class HotelService implements HotelServiceInterface {
 		
 	@Autowired
 	HotelRepository repository;
