@@ -8,15 +8,14 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-
+import com.cg.hotelbookingmanagementsystem.HotelService.dao.HotelEntity;
+import com.cg.hotelbookingmanagementsystem.HotelService.dao.HotelRepository;
 import com.cg.hotelbookingmanagementsystem.HotelService.dto.Hotel;
 import com.cg.hotelbookingmanagementsystem.HotelService.exception.HotelNameNotFoundException;
 import com.cg.hotelbookingmanagementsystem.HotelService.exception.HotelNotFoundException;
-import com.cg.hotelbookingmanagementsystem.HotelService.dao.HotelEntity;
-import com.cg.hotelbookingmanagementsystem.HotelService.dao.HotelRepository;
 
 @Service
-public class HotelService implements HotelServiceInterface {
+public class HotelServiceImpl implements HotelServiceInterface {
 		
 	@Autowired
 	HotelRepository repository;

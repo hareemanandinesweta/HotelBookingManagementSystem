@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.cg.hotelbookingmanagementsystem.HotelService.dto.Hotel;
 import com.cg.hotelbookingmanagementsystem.HotelService.exception.HotelNameNotFoundException;
 import com.cg.hotelbookingmanagementsystem.HotelService.exception.HotelNotFoundException;
-import com.cg.hotelbookingmanagementsystem.HotelService.service.HotelService;
+import com.cg.hotelbookingmanagementsystem.HotelService.service.HotelServiceImpl;
 
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 public class HotelController {
 	@Autowired
 	
-	HotelService service;
+	HotelServiceImpl service;
 	@GetMapping("/getAllHotels")
 	public List<Hotel> getAllList(){
 	return service.getHotelList();
