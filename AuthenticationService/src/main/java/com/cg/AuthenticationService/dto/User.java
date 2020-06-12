@@ -6,7 +6,21 @@ public class User {
 	private Integer userId;
 	private String userRole;
 	private String password;
+	private String mobileNo;
+	private String Address;
 	
+	public String getMobileNo() {
+		return mobileNo;
+	}
+	public void setMobileNo(String mobileNo) {
+		this.mobileNo = mobileNo;
+	}
+	public String getAddress() {
+		return Address;
+	}
+	public void setAddress(String address) {
+		Address = address;
+	}
 	public String getPassword() {
 		return password;
 	}
@@ -37,6 +51,10 @@ public class User {
 		this.userName = userName;
 		this.userId = userId;
 		this.userRole = userRole;
+	}
+	
+	public User() {
+		
 	}
 	
 }

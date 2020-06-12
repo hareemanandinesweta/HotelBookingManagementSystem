@@ -18,15 +18,15 @@ public class UserEntity {
 	@Column(name="userrole")
 	private String userRole;
 	@Column(name="mobileno")
-	private Long mobileNo;
+	private String mobileNo;
 	@Column(name="email")
 	private String email;
 	@Column(name="address")
 	private String address;
-	public Long getMobileNo() {
+	public String getMobileNo() {
 		return mobileNo;
 	}
-	public void setMobileNo(Long mobileNo) {
+	public void setMobileNo(String mobileNo) {
 		this.mobileNo = mobileNo;
 	}
 	public String getEmail() {
