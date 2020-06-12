@@ -20,8 +20,9 @@ public class HotelEntity {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "hotelid")
 	private Integer hotelId;
+	
+	
 	@Column(name = "city")
-
 	@NotNull(message = "City is mandatory")
 	private String city;
 
