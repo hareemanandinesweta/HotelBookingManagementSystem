@@ -37,7 +37,7 @@ public class HotelEntity {
 	@NotNull(message = "hotel address is mandatory")
 	private String address;
 	
-	@Min(2)
+	@Min(100)
 	@NotNull(message = "Rate cannot be null")
 	@Column(name = "avgratepernight")
 	private Integer avgRatePerNight;
