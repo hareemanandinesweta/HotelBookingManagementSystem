@@ -1,4 +1,4 @@
-package com.cg.hotelbookingmanagementsystem.HotelService.dto;
+package com.cg.hbms.hotelservice.dto;
 
 
 public class Hotel {

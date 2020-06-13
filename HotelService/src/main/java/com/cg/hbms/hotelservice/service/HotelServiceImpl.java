@@ -1,4 +1,4 @@
-package com.cg.hotelbookingmanagementsystem.HotelService.service;
+package com.cg.hbms.hotelservice.service;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,11 +8,11 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.cg.hotelbookingmanagementsystem.HotelService.dao.HotelEntity;
-import com.cg.hotelbookingmanagementsystem.HotelService.dao.HotelRepository;
-import com.cg.hotelbookingmanagementsystem.HotelService.dto.Hotel;
-import com.cg.hotelbookingmanagementsystem.HotelService.exception.HotelNameNotFoundException;
-import com.cg.hotelbookingmanagementsystem.HotelService.exception.HotelNotFoundException;
+import com.cg.hbms.hotelservice.dao.HotelEntity;
+import com.cg.hbms.hotelservice.dao.HotelRepository;
+import com.cg.hbms.hotelservice.dto.Hotel;
+import com.cg.hbms.hotelservice.exception.HotelNameNotFoundException;
+import com.cg.hbms.hotelservice.exception.HotelNotFoundException;
 
 @Service
 public class HotelServiceImpl implements HotelServiceInterface {

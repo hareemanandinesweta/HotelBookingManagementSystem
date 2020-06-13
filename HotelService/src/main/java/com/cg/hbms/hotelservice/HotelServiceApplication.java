@@ -1,4 +1,4 @@
-package com.cg.hotelbookingmanagementsystem.HotelService;
+package com.cg.hbms.hotelservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.cg.hotelbookingmanagementsystem.HotelService.dao;
+package com.cg.hbms.hotelservice.dao;
 
 import java.util.List;
 

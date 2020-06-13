@@ -1,4 +1,4 @@
-package com.cg.hotelbookingmanagementsystem.HotelService.controller;
+package com.cg.hbms.hotelservice.controller;
 
 import java.util.List;
 
@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.cg.hotelbookingmanagementsystem.HotelService.dto.Hotel;
-import com.cg.hotelbookingmanagementsystem.HotelService.exception.HotelNameNotFoundException;
-import com.cg.hotelbookingmanagementsystem.HotelService.exception.HotelNotFoundException;
-import com.cg.hotelbookingmanagementsystem.HotelService.service.HotelServiceImpl;
-import com.cg.hotelbookingmanagementsystem.HotelService.service.HotelServiceInterface;
+import com.cg.hbms.hotelservice.dto.Hotel;
+import com.cg.hbms.hotelservice.exception.HotelNameNotFoundException;
+import com.cg.hbms.hotelservice.exception.HotelNotFoundException;
+import com.cg.hbms.hotelservice.service.HotelServiceImpl;
+import com.cg.hbms.hotelservice.service.HotelServiceInterface;
 
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;

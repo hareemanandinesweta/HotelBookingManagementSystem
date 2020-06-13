@@ -1,4 +1,4 @@
-package com.cg.hotelbookingmanagementsystem.HotelService.exception;
+package com.cg.hbms.hotelservice.exception;
 
 import java.util.HashMap;
 import java.util.Map;

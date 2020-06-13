@@ -1,4 +1,4 @@
-package com.cg.hotelbookingmanagementsystem.HotelService.dao;
+package com.cg.hbms.hotelservice.dao;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
