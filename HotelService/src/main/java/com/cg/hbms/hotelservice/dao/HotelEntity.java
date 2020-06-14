@@ -1,3 +1,10 @@
+/****************************************************************************************************************************
+ - File Name      	: HotelEntity
+ - Author           : Dinesh Sharma
+ - Creation Date    : 10-06-2020
+ - Description      : This is an Entity Class of HotelService which maps the instance variable with Hotel table columns
+  ****************************************************************************************************************************/ 
+
 package com.cg.hbms.hotelservice.dao;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,6 +16,7 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 @Entity(name = "Hotel")
@@ -21,13 +29,16 @@ public class HotelEntity {
 	private Integer hotelId;
 	
 	
+	@Pattern(regexp ="(^[a-zA-Z]+$)", message = "City name can only be in alphabets.")
 	@Column(name = "city")
 	@NotNull(message = "City is mandatory")
 	private String city;
 
+	
 	@NotBlank(message = "hotel name is mandatory")
 	@NotNull(message = "hotel name is mandatory")
 	@Column(name = "hotelname")
+	@Pattern(regexp ="(^[a-zA-Z]+$)", message = "Hotel name can only be in alphabets.")
 	private String hotelName;
 	
 	
@@ -37,12 +48,13 @@ public class HotelEntity {
 	@NotNull(message = "hotel address is mandatory")
 	private String address;
 	
+	
 	@Min(100)
 	@NotNull(message = "Rate cannot be null")
 	@Column(name = "avgratepernight")
 	private Integer avgRatePerNight;
 	
-	
+	@Pattern(regexp ="^(?:(?:\\+|0{0,2})91(\\s*[\\-]\\s*)?|[0]?)?[789]\\d{9}$", message = "Not a valid phone number")
 	@Column(name = "phoneno")
 	@NotBlank(message = "hotel phone no is mandatory")
 	@NotNull(message = "hotel phone no is mandatory")

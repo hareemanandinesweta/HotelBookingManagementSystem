@@ -1,3 +1,10 @@
+/****************************************************************************************************************************
+ - File Name      	: Hotel
+ - Author           : Dinesh Sharma
+ - Creation Date    : 10-06-2020
+ - Description      : This is a model class which encapsulates the data and helps to share it among different classes.
+  ****************************************************************************************************************************/ 
+
 package com.cg.hbms.hotelservice.dto;
 
 
