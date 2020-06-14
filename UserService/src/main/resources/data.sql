@@ -1,0 +1,3 @@
+insert into user(userid,username,password,role,mobileno,email,address) values(1001,'Reema','re@12','User',7865439034,'ree@gmail.com','Pune');
+insert into user(userid,username,password,role,mobileno,email,address) values(1002,'Shruti','sh@22','User',8865439035,'shr@gmail.com','Punjab');
+insert into user(userid,username,password,role,mobileno,email,address) values(1003,'Shivam','shi@32','User',9865439036,'shiv@1gmail.com','Delhi');
